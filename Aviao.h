@@ -12,6 +12,7 @@ typedef struct node{
 	struct node *prox;
 }aviao;
 
+aviao * removerAviao(aviao **aero, char cod[]);
 aviao * criarAviao(char cod[], char comandante[], int cpcd, char dest[]);
-aviao * removerAviao(aviao **head, aviao **fim);
 void inserirAeroporto(aviao **aero, char cod[], char comandante[], int cpcd, char dest[]);
+void imprimir(aviao *aero);
